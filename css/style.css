@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e2e2e2;
+}
+
+p,
+label {
+    color: #444;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+    width: 400px;
+    background-color: transparent;
+}
+
+/* remoção do contorno dos inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-container {
+    background-color: #fdfdfd;
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+}
+
+.form-header {
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.form-header p {
+    color: #18629e;
+    border-bottom: 2px solid #18629e;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 45px;
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+
+.form-body {
+    padding: 30px;
+    margin-left: 50px;
+}
+
+.required-field {
+    color: #d80835;
+}
+
+.box-input {
+    margin-bottom: 25px;
+}
+
+.block {
+    display: block;
+}
+
+.radio {
+    margin-top: 10px;
+}
+
+.btn-sumbit {
+    background-color: #18629e;
+    color: #FFF;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Ocultação das setas do input type number no Chrome, Safari e Firefox */
+input[type="number"] {
+    appearance: none;
+    -webkit-appearance: none;
+    /* Para Chrome, Safari, Edge */
+    -moz-appearance: textfield;
+    /* Para Firefox */
+}

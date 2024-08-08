@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <p>Formulário de Cadastro</p>
+        </div>
+        <div class="form-body">
+            <form>
+                <div class="box-input">
+                    <label for="first-name">Nome <span class="required-field">*</span></label>
+                    <input type="text" name="first-name" id="first-name" class="block" placeholder="Informe seu nome"
+                        required>
+                </div>
+                <div class="box-input">
+                    <label for="last-name">Sobrenome <span class="required-field">*</span></label>
+                    <input type="text" name="last-name" id="last-name" class="block" placeholder="Informe seu sobrenome"
+                        required>
+                </div>
+                <div class="box-input">
+                    <label for="date-birth">Data de Nascimento <span class="required-field">*</span></label>
+                    <input type="date" name="date-birth" id="date-birth" class="block" required>
+                </div>
+                <div class="box-input">
+                    <label for="email">E-mail<span class="required-field">*</span></label>
+                    <input type="email" name="email" id="email" class="block" placeholder="Informe seu e-mail" required>
+                </div>
+                <div class="box-input">
+                    <label for="phone">Telefone<span class="required-field">*</span></label>
+                    <input type="number" name="phone" id="phone" class="block" placeholder="00000000000" required>
+                </div>
+                <div class="box-input">
+                    <label for="adress">Endereço <span class="required-field">*</span></label>
+                    <input type="text" name="adress" id="adress" class="block"
+                        placeholder="Informe seu endereço. Ex 'Nome da rua e número'" required>
+                </div>
+                <div class="box-input">
+                    <label for="city">Cidade <span class="required-field">*</span></label>
+                    <input type="text" name="city" id="city" class="block" placeholder="Informe sua cidade" required>
+                </div>
+                <div class="box-input">
+                    <label for="cep">CEP <span class="required-field">*</span></label>
+                    <input type="number" name="cep" id="cep" class="block" placeholder="00000000" required>
+                </div>
+                <div class="box-input">
+                    <p>Sexo: <span class="required-field">*</span></p>
+                    <div class="radio">
+                        <input type="radio" id="male" name="sex">
+                        <label for="male">Masculino</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="female" name="sex">
+                        <label for="female">Feminino</label>
+                    </div>
+                </div>
+                <input type="submit" class="btn-sumbit" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
